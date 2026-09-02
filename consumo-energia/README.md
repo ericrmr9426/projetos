@@ -1,4 +1,3 @@
-<span style="font-size: 4em; vertical-align: micddle;">💡</span>
 # Projeto Cálculo de Consumo Elétrico
 ## Objetivo: registrar e calcular consumo/custo de aparelhos elétricos.
 
