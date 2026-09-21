@@ -1,4 +1,5 @@
-<span style="font-size: 4em; vertical-align: middle;">🫰</span>
+<span style="font-size: 4rem; display: inline-block;">🫰</span>
+
 # Projeto Cálculo de Desconto
 ## Objetivo: Calcular descontos para uma loja.
 
