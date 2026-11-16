@@ -1,0 +1,72 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Transição suave de deslizamento para o menu do Bootstrap */
+.navbar-collapse.collapse {
+  transition: all 0.35s ease-in-out;
+}
+
+.navbar-collapse.collapsing {
+  height: 0;
+  transition: height 0.35s ease-in-out;
+}
+
+/* Faz o carrossel ocupar 100% da altura da tela (descontando o menu navbar) */
+#carouselPortfolio {
+  height: calc(100vh - 56px);
+  min-height: 400px;
+}
+
+#carouselPortfolio .carousel-inner,
+#carouselPortfolio .carousel-item {
+  height: 100%;
+}
+
+/* Faz a imagem preencher o espaço perfeitamente sem distorcer */
+#carouselPortfolio img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Centraliza a faixa exatamente no meio da imagem (vertical e horizontalmente) */
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #c2e4cb;
+  color: #176585;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Aplica a cor #176585 em todos os títulos principais e na classe personalizada */
+h2, h3, h4, h5, h6,
+.text-brand {
+  color: #176585 !important;
+}
+
+/* Mantém os parágrafos da seção perfil na cor #176585 */
+#perfil p {
+  color: #176585 !important;
+}
+
+/* Desktop */
+.seu-texto {
+    font-size: 18px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .seu-texto {
+        font-size: 14px;
+    }
+}
