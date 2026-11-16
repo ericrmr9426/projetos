@@ -1,0 +1,133 @@
+/* 
+==================================================
+COMO ESTÁ DESATIVADO, O NAVEGADOR IGNORA ESTE BLOCO:
+==================================================
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+================================================== */
+
+/* Seus estilos reais continuam funcionando aqui embaixo normalmente */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Distribui o espaço uniformemente entre as colunas */
+}
+
+.filmes {
+    color: white;
+    flex-grow: 1;
+    background: green;
+    text-align: center;
+    padding: 10px;
+}
+
+.musicas {
+    color: white;
+    flex-grow: 1;
+    background: red;
+    text-align: center;
+    padding: 10px;
+}
+
+.games {
+    flex-grow: 1;
+    background: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+#titulo-principal {
+    color: blue;
+    text-align: center;
+}
+
+.poster {
+    width: 100%;        
+    max-width: 200px;   
+    height: auto;       
+    display: block;     
+    margin: 10px auto;  
+}
+
+/* Agora .card serve para todos os itens (filmes, músicas e games) */
+.card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem, o h3 e o link horizontalmente */
+    margin: 15px auto;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 8px 0;
+    color: white; 
+}
+
+/* Estilo do link "Saber mais" */
+.link-saber-mais {
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Hover unificado para qualquer card */
+.card:hover .link-saber-mais {
+    opacity: 1;
+    visibility: visible;
+}
